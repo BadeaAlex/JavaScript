@@ -9,7 +9,7 @@ function beginningAnimation() {
   fadeInOut(desc1);
   desc1.addEventListener("animationend", () => {
     desc1.classList.add("disappear");
-    desc2.classList.remove("before");   
+    desc2.classList.remove("before");
     fadeInOut(desc2);
     desc2.addEventListener("animationend", () => {
       desc2.classList.add("disappear");
@@ -103,8 +103,8 @@ function playRound(playerSelection, computerSelection) {
 
   noot();
 
-  let message; 
-  
+  let message;
+
   if (playerSelection == computerSelection) {
     message = `${playerSelection} and ${computerSelection}. It's a Tie!`;
   } else if (playerSelection == 'Paper' && computerSelection == 'Scissors') {
@@ -138,7 +138,7 @@ function playRound(playerSelection, computerSelection) {
 
 
   return message;
-  } 
+  }
 
 let playerCount = 0;
 let computerCount = 0;
@@ -180,13 +180,13 @@ function game() {
     computerScoreDiv.textContent = computerCount;
 
     if (playerCount == 5) {
-      finalResult.textContent = `yay ! play time with Pinga !`; 
+      finalResult.textContent = `yay ! play time with Pinga !`;
       completeGame();
 
     } else if (computerCount == 5) {
       finalResult.textContent = `uh oh... laundry time...`;
       completeGame();
-    } 
+    }
   }
 
 }
